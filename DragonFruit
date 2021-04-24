@@ -1,0 +1,24 @@
+package Exercise;
+
+public class DragonFruit extends Fruit{
+ 
+	private double price;
+	private int quantity;
+	private double weight;
+	
+	public DragonFruit(String name, double p, int q, double weight) {
+		super(name);
+		this.price=p;
+		this.quantity=q;
+		this.weight=weight;
+		
+	}
+	
+	public double getTotalWeight() {
+		return this.quantity*this.weight;
+	}
+	
+	public double TotalPrice() {
+		return this.price*getTotalWeight();
+	}
+}
