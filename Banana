@@ -1,0 +1,36 @@
+package Exercise;
+
+public class Banana extends Fruit {
+	private char vitA;
+	private double price;
+	private int quantity;
+	
+	public Banana(String name, char vitA, double price, int quantity) {
+		super(name);
+		this.vitA=vitA;
+		this.price=price;
+		this.quantity=quantity;
+		
+	}
+
+	public char getVitA() {
+		return vitA;
+	}
+	
+	public double getPrice() {
+		return price;
+	}
+	
+	public int getQuantity() {
+		return quantity;
+	}
+	
+	public double totalPrice() {
+		return this.price*this.quantity;
+	}
+	
+	public String toString() {
+		return super.toString() + "\nThe total price for " + quantity + " banana are " + "RM" + totalPrice();
+	}
+	
+}
