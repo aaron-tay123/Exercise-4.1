@@ -1,0 +1,25 @@
+package Exercise;
+
+public class Papaya extends Fruit {
+	private int calories;
+	private int amount;
+	
+	public Papaya(String name, int c, int a) {
+		super(name);
+		this.calories=c;
+		this.amount=a;
+		
+	}
+
+	public int getAmount() {
+		return amount;
+	}
+	
+	public int Calories() {
+		return this.amount*this.calories;
+	}
+	
+	public String toString() {
+		return this.amount +  " papaya has "+ this.calories + " of calories to make our body more healthy.";
+	}
+}
