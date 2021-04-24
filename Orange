@@ -1,0 +1,37 @@
+package Exercise;
+
+public class Orange extends Fruit {
+    private String color;
+	private int discount;
+	private int price;
+	private int quantity;
+	
+	public Orange(String name, String c, int d, int price, int quantity) {
+		super(name);
+		this.color=c;
+		this.discount = d;
+		this.price=price;
+		this.quantity=quantity;
+		
+	System.out.println("Orange constructor is invoked");
+	}
+	
+	public String Color() {
+		return this.color;
+	}
+	public int getDiscount() {
+		return this.discount;
+	}
+	public int getTotalprice() {
+		return this.price*this.quantity;
+	}
+	
+	public int FinalPrice() {
+		return getTotalprice()-(getTotalprice()*getDiscount()/100);
+	}
+	
+	public String toString() {
+		return super.toString() + "\nThe final price for the orange after discount is" + FinalPrice();
+	}
+
+}
