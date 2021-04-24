@@ -1,0 +1,45 @@
+package Exercise;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Fruit objF  = new Fruit("Fruits");
+		Apple objA  = new Apple("Apples", 5, 12);
+		Orange objO = new Orange("Orange", "orange", 10, 15, 12);
+		Papaya objP = new Papaya("Papaya", 120, 2);
+		Banana objB = new Banana("Banana", 'Y', 6.50, 5);
+		DragonFruit objD = new DragonFruit("Dragon Fruit", 6.99, 4, 5.64);
+
+		System.out.println("");
+		System.out.println("---------------Fruit---------------");
+		System.out.println(objF.toString());
+		System.out.println("");
+		
+		System.out.println("---------------Apple---------------");
+		System.out.println(objA.toString());
+		System.out.println("");
+		
+		System.out.println("---------------Orange---------------");
+		System.out.println("Color: " + objO.Color());
+		System.out.println("Discount: " + objO.getDiscount() + "%");
+		System.out.println("Total Price before the discount: RM" + objO.getTotalprice());
+		System.out.println("Final Price after the discount : RM" + objO.FinalPrice());
+		System.out.println("");
+		
+		System.out.println("---------------Papaya---------------");
+		System.out.println(objP.toString());
+		System.out.println("");
+		
+		System.out.println("---------------Banana---------------");
+		System.out.println("Does the banana has vitamin A (Y/N): " + objB.getVitA());
+		System.out.println(objB.toString());
+		System.out.println("");
+		
+		System.out.println("---------------DragonFruit---------------");
+		System.out.println("Total Price for Dragon Fruit: RM" + objD.TotalPrice());
+		System.out.println("");
+		
+	}
+
+}
